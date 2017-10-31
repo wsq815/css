@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <style type="text/css">
+        .box{
+            width:270px;
+            height:129px;
+            margin:0px auto;
+            text-indent:300%;
+            background:url("./childrens-day-1x.png") no-repeat;
+            background-position:0px 0px;
+            overflow:hidden;
+            animation:myani 6s infinite steps(115);
+            box-shadow:0px 0px 30px rgba(0,0,0,0.15);
+        }
+        @keyframes myani{
+            to{
+                background-position:-31050px 0px;
+            }
+        }
+        input{
+            width:270px;
+            height:25px;
+            margin:0px auto;
+            margin-top:100px;
+            display:block;         
+            border:transparent;
+            text-indent:5px;
+            box-shadow:0px 0px 3px rgba(0,0,0,0.2);   
+        }
+        input:focus{
+            outline:none;
+            text-indent:5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="输入下面动画执行的时间">
+    <div class="box">
+        
+    </div>
+    
+    <script type="text/javascript" src="./jquery.js"></script>
+    // <script type="text/javascript">
+    //     var time = 0;
+    //     $('input').blur(function(){
+    //         time = $(this).val();
+    //         $('.box').css({
+    //             animationDuration:1,
+    //             backgroundPosition:"0px 0px"
+    //         });
+    //     });
+    // </script>
+</body>
+</html>

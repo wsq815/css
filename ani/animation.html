@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <style type="text/css">
+        .box{
+            width:270px;
+            height:129px;
+            margin:0px auto;
+            text-indent:300%;
+            background:url("./childrens-day-1x.png") no-repeat;
+            background-position:0px 0px;
+            overflow:hidden;
+            animation:myani 10s infinite steps(115);
+            box-shadow:0px 0px 30px rgba(0,0,0,0.15);
+            margin-top:100px;
+        }
+        @keyframes myani{
+            to{
+                background-position:-31050px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+</body>
+</html>

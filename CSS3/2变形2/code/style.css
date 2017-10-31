@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+body {
+	margin: 100px;
+}
+
+#a {
+	perspective: 500px;
+	/*perspective-origin: top right;*/
+	transform-style: preserve-3d;
+}
+
+img {
+	/*transform: translate3d(100px, 100px, 300px);*/
+	/*transform: translateZ(300px);*/
+
+	/*transform: scale3d(1.5,1.5,2.5) rotateX(45deg);*/
+	/*transform: scaleZ(1.5) rotateX(45deg);*/
+
+	/*transform: rotate3d(1,1,1,120deg);*/
+
+	/*transform: rotateX(120deg);*/
+	/*transform: rotateY(45deg);*/
+
+	/*transform: perspective(500px) rotateY(45deg);*/
+	transform: rotateY(45deg);
+}
