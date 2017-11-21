@@ -1,0 +1,115 @@
+html, body, img, div, a, span, p, ul, li, header, nav, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+ul, li{
+  list-style: none;
+}
+
+input,
+textarea,
+a{
+  outline: none
+}
+
+a{
+  color: #495060;
+}
+
+a,
+a:hover{
+  text-decoration: none;
+}
+
+img{
+  vertical-align: middle;
+  display: block;
+  max-width: 100%;
+}
+
+html, body{
+  width: 100%;
+  min-height: 100%;
+  line-height: 1.45;
+  font-size: 14px;
+  font-family: "PingFang SC","Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft YaHei","微软雅黑",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #eee;
+  color: #495060;
+}
+
+#app{
+  width: 100%;
+}
+
+.view-title{
+  margin: 0 !important;
+  padding: 0 !important;
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+.row-title {
+  margin: 32px 0 15px 0;
+  padding-left: 16px;
+  font-size: 24px;
+  line-height: 24px;
+  position: relative;
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    content: '';
+    border-left: 3px solid #4399ff;
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+}
+
+// 常用间距
+.margin-t-10 {
+  margin-top: 10px;
+}
+
+.margin-t-15 {
+  margin-top: 15px;
+}
+
+.margin-l-5 {
+  margin-left: 5px;
+}
+
+.instruction-box {
+  padding-left: 20px;
+
+  ul li{
+    list-style: square;
+  }
+}
+
+/*滚动条*/
+// ::-webkit-scrollbar{width: 6px; height: 10px;}
+// ::-webkit-scrollbar-button:vertical{display: none;}
+// ::-webkit-scrollbar-thumb{border-radius: 0; background-color: $color-main;}
+// ::-webkit-scrollbar-thumb:vertical:hover{background-color: $color-main;}
+// ::-webkit-scrollbar-thumb:vertical:active{background-color: $color-main;}
